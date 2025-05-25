@@ -1,0 +1,54 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.template, .hidden {
+  display: none;
+}
+
+input, button, textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.moving {
+  border: 2px solid black;
+}
+
+.editDescription {
+  width: 100%;
+  height: 5em;
+  background-color: inherit;
+  font-size: inherit;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.card button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.moveHere {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: small;
+  color: gray;
+}
+
+.moveHere:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
