@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  color: white;
+  padding: 0.5rem 5rem;
+}
+
+header h1 {
+  font-size: x-large;
+  margin: 0;
+}
+
+.add-card-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-card-form input[type="text"] {
+  width: 20em;
+}
+
+.add-card-form input[type="color"] {
+  width: 8em;
+}
+
+.add-card-form button {
+  background-color: lightgreen;
+  color: black;
+  padding: 0.25rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 5rem;
+  background-color: white;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 0.5rem 3rem;
+}
+
+.column:first-child {
+  background-color: #f0f0f0;
+  padding-left: 0.5rem;
+}
+
+.column:last-child {
+  background-color: #f0f0f0;
+  padding-right: 0.5rem;
+}
+
+.column h2 {
+  margin: 1rem 0;
+}
+
+.card {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+
+.card-buttons {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: none;
+  gap: 0.25rem;
+}
+
+.card:hover .card-buttons {
+  display: flex;
+}
+
+.move-here {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #666;
+}
